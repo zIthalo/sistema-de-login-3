@@ -24,13 +24,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // echo $sql->rowCount(); # e aqui em baixo é o mesmo comando que eu utilizei na conexão 1 para mostrar a quantidade de registros ou linhas que eu tenho no meu DB
 
-
-
-
 global $pdo;#Esta variável $pdo precisa ser global para que eu use em qualquer parte do meu sistema php,  acabei chamando ela lá na minha classe/objeto Usuario quando eu chamo ela ela faz todos os comandos que tem aqui onde ela estiver.
-
-
-
 
  try { #este trycatch é o seguinte se na minha conexão não houver nenhum erro ele executará esta linha abaixo
     $pdo = new PDO("mysql:dbname=".$banco."; host=".$localhost,$user,$pass);
