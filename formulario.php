@@ -68,7 +68,7 @@
                     <label for="email" class="labelInput">Email</label>
                 </section>
                 <section class="inputBox">
-                    <input type="pass" name="senha" id="senha" class="inputUser" required>
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
                 </section>
                 <section class="inputBox">

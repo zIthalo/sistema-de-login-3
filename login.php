@@ -41,6 +41,7 @@
                     </div>
 
                     <button class="btn-login">Login</button>
+                    <p><a href="formulario.php" target="_self" class="cadastro">Não possui conta? Cadastre-se</a></p>
                 </form>
 
             </div>

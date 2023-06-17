@@ -26,6 +26,8 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 global $pdo;#Esta variável $pdo precisa ser global para que eu use em qualquer parte do meu sistema php,  acabei chamando ela lá na minha classe/objeto Usuario quando eu chamo ela ela faz todos os comandos que tem aqui onde ela estiver.
 
+
+#try catch. Tente fazer isso, se não conseguir pegue o erro
  try { #este trycatch é o seguinte se na minha conexão não houver nenhum erro ele executará esta linha abaixo
     $pdo = new PDO("mysql:dbname=".$banco."; host=".$localhost,$user,$pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
