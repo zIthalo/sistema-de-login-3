@@ -135,53 +135,11 @@ div.video > iframe{
     height: 90%;
     
 }
-aside{
-    background-color: var(--cor1);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
-}
 
-aside > h3{
-    font-family: var(--fonte-padrao);
-    background-color: var(--cor4);
-    color: white;
-    padding: 5px;
-    margin: -10px -10px 0px -10px; /*Esta margin negativa serviu para encaixar o h3 bem rente ao bloco do aside parecendo que o aside já começava de outra cor*/
-    border-radius: 10px 10px 0px 0px; /*A ordem deste border radius está assim 10px acima esquerda 10px acima direita 0px abaixo direita 0px abaixo esquerda*/
-}
-aside > #lista-android{
-    list-style-type:'\2714\00a0';/*para quê serviu este código? O \2714 foi o código do emoji de check e o \00a0 é um código para dar espaço entre o check e o conteúdo da lista*/
-    list-style-position: inside; /*colocar os marcadores dentro da caixa do aside*/
-    columns: 2; /*dividi a lista em duas colunas*/
-}
 
-/* footer{
-    background-color: var(--cor5);
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    font-family: var(--fonte-padrao);
-    font-weight: bold;
-    font-size: .8em;
-    justify-content: space-between;
-}
 
-footer > p{
-    padding: 5px;
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-top: 10px;
-    text-align: justify;
-    display: block;
-    
-}
 
-footer >h3{
-    font-size: 1.2rem;
-    padding-top: 2%;
-    margin-right: 40%;
-} */
+
 
 .dev{
     margin-left: 50%;
