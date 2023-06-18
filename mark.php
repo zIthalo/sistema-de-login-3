@@ -1,0 +1,298 @@
+ <?php
+require 'verifica.php';
+if(isset($_SESSION['id']) && !empty($_SESSION['id'])):// Se a sessão com o id existir e ela não estiver vazia
+
+?>
+ <!DOCTYPE html>
+ <html lang="pt-br">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Como surgiu o mascote do android?</title>
+
+     <link rel="stylesheet" href="style/swiper-bundle.min.css">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+
+     <link rel="stylesheet" href="style/ia.css">
+ </head>
+
+ <body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary colorNav">
+         <div class="container-fluid">
+             <a class="navbar-brand linkNav" href="#">8-BITS</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                 aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                         <a class="nav-link linkNav" aria-current="page" href="#">Home</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle linkNav" href="#" role="button" data-bs-toggle="dropdown"
+                             aria-expanded="false">
+                             Curiosidades
+                         </a>
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="index.php" target="_self">Android</a></li>
+                             <li><a class="dropdown-item" href="ia.php" target="_self">Inteligência Artificial</a></li>
+                             <li>
+                             <li><a href="gpt.php" class="dropdown-item" target="_self">ChatGPT</a></li>
+                             <li><a href="elon-musk.php" class="dropdown-item" target="_self">Elon Musk</a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle linkNav" href="#" role="button" data-bs-toggle="dropdown"
+                             aria-expanded="false">
+                             Cadastro
+                         </a>
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="formulario.php">Cadastre-se</a></li>
+                             <li><a class="dropdown-item" href="login.php">Login</a></li>
+                             <li>
+                         </ul>
+                 </ul>
+                 <div class="form-inline my-2 my-lg-0">
+                     <label class="mr-5" for="">
+                         <?php echo "Olá, ".$nomeUser."!    ";#esse código foi criado para mostrar o nome do usuário que estiver logado no sistema aqui na barra de menu do meu site?></label>
+                     <a class="btn btn-danger" href="logout.php">SAIR</a>
+                 </div>
+             </div>
+         </div>
+         </div>
+     </nav>
+     <main>
+         <article>
+             <!--Shift + tab para voltar a indentação-->
+             <h1> Quem é Mark Zuckerberg?</h1>
+
+             <p>Mark Zuckerberg, nascido em 14 de maio de 1984 em White Plains, Nova York, é
+                 um empresário e programador americano conhecido por ser o co-fundador e CEO
+                 do Facebook, a maior rede social do mundo. </p>
+
+             <h2>Criação do "Zucknet" e do "Facemash"</h2>
+
+             <p>Zuckerberg começou a mostrar interesse pela programação de computadores desde
+                 jovem. Aos 12 anos, criou um programa de mensagens instantâneas chamado
+                 "Zucknet" para uso interno em sua casa. Em 2002, enquanto frequentava a
+                 Universidade Harvard, criou um site chamado "Facemash" que permitia aos
+                 estudantes classificar a atratividade de seus colegas. O site foi popular, mas
+                 também gerou controvérsia, resultando em seu fechamento. No entanto, essa
+                 experiência inicial ajudou Zuckerberg a perceber o potencial das redes sociais.</p>
+             <p>Musk frequentou a Waterkloof House Preparatory School e a Pretoria Boys High
+                 School. Aos 17 anos, ele se mudou para os Estados Unidos para estudar na
+                 Universidade da Pensilvânia, onde obteve diplomas em economia e física.</p>
+
+             <picture class="ia">
+                 <source media="(max-width: 668px)" srcset="imagens/mark-pq.jpg" type="image/jpg">
+                 <img src="img/mark.jpg" alt="Mark Zuckerberg">
+             </picture>
+
+
+
+             <h2 class="titulo2">Fundação do Facebook com colegas de quarto</h2>
+
+             <p>Em 2004, Zuckerberg e seus colegas de quarto na universidade, Eduardo Saverin,
+                 Andrew McCollum, Dustin Moskovitz e Chris Hughes, lançaram o Facebook.
+                 Inicialmente, a plataforma era destinada apenas aos estudantes de Harvard, mas
+                 logo se expandiu para outras universidades e, posteriormente, para o público em
+                 geral. O Facebook cresceu rapidamente, atraindo milhões de usuários em todo o
+                 mundo.
+             </p>
+             <h2 class="titulo2">Expansão do Facebook e sucesso global</h2>
+
+             <p>O sucesso do Facebook levou Zuckerberg a deixar Harvard em 2004 para se
+                 dedicar integralmente à empresa. Ele mudou a sede do Facebook para Palo Alto,
+                 Califórnia, e recebeu investimentos significativos de empresas de capital de risco.
+                 Nos anos seguintes, o Facebook continuou a crescer e adquiriu várias outras
+                 empresas, como o Instagram, WhatsApp e Oculus VR.</p>
+             <p>No entanto, a história de Zuckerberg e do Facebook também foi marcada por várias
+                 controvérsias. Em 2010, o filme "A Rede Social" retratou os eventos que levaram à
+                 criação do Facebook, destacando disputas legais e alegações de roubo de ideias.
+                 Além disso, o Facebook tem enfrentado críticas relacionadas à privacidade dos
+                 dados dos usuários, disseminação de notícias falsas e seu impacto na sociedade.</p>
+             <p>Apesar das controvérsias, Zuckerberg se tornou uma das figuras mais influentes no
+                 mundo da tecnologia e nos negócios. Ele foi reconhecido como uma das pessoas
+                 mais ricas do mundo e tem se envolvido em iniciativas filantrópicas. Em 2015,
+                 Zuckerberg e sua esposa, Priscilla Chan, anunciaram a criação da Iniciativa Chan
+                 Zuckerberg, dedicada à promoção do potencial humano e à igualdade.</p>
+             <p>A história de Mark Zuckerberg é um exemplo notável de empreendedorismo e
+                 inovação tecnológica, tendo transformado uma ideia inicial em uma das empresas
+                 mais poderosas e impactantes do mundo.</p>
+
+             <div class="video">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXr7xvmT4Hs"
+                     title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     allowfullscreen></iframe>
+             </div>
+
+
+             <p><strong>Este site foi apresentado aqui:</strong></p>
+             <p class="map"><iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.405129022287!2d-34.9107968856167!3d-7.8525986943421175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14d50f29c135%3A0xb7c10c823a37123b!2sEscola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins!5e0!3m2!1spt-BR!2sbr!4v1669729072171!5m2!1spt-BR!2sbr"
+                     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
+         </article>
+     </main>
+
+     <footer>
+
+
+         <!--O que eu mais errei aqui foi escrever uma classe de um jeito em html e de outro em css tipo: slide/slider-->
+         <div class="slide-container swiper">
+             <div class="slide-content">
+                 <div class="card-wrapper swiper-wrapper">
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="./img/ft1.png" alt="ft1" class="card-img">
+                             </div>
+                         </div>
+                         <div class="card-content">
+
+                             <h2 class="name">Ithalo Willian</h2>
+
+                             <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                 deleniti quas. Accusamus debitis quia iusto assumenda mollitia laudantium qui totam
+                                 aut,
+                                 magni at iste temporibus illo! Commodi delectus natus qui?</p>
+
+                             <button class="button"><a href="#">View More</a></button>
+                         </div>
+                     </div>
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="./img/ft2.jpg" alt="ft2" class="card-img">
+                             </div>
+                         </div>
+                         <div class="card-content">
+
+                             <h2 class="name">Alysson Roberto</h2>
+
+                             <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                 deleniti quas. Accusamus debitis quia iusto assumenda mollitia laudantium qui totam
+                                 aut,
+                                 magni at iste temporibus illo! Commodi delectus natus qui?</p>
+
+                             <button class="button"><a href="#">View More</a></button>
+                         </div>
+                     </div>
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="./img/ft3.png" alt="ft3" class="card-img">
+                             </div>
+                         </div>
+                         <div class="card-content">
+
+                             <h2 class="name">Kaline Nascimento</h2>
+
+                             <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                 deleniti quas. Accusamus debitis quia iusto assumenda mollitia laudantium qui totam
+                                 aut,
+                                 magni at iste temporibus illo! Commodi delectus natus qui?</p>
+
+                             <button class="button"><a href="#">View More</a></button>
+                         </div>
+                     </div>
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="./img/ft4.png" alt="ft4" class="card-img">
+                             </div>
+                         </div>
+                         <div class="card-content">
+
+                             <h2 class="name">Matheus Henrique</h2>
+
+                             <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                 deleniti quas. Accusamus debitis quia iusto assumenda mollitia laudantium qui totam
+                                 aut,
+                                 magni at iste temporibus illo! Commodi delectus natus qui?</p>
+
+                             <button class="button"><a href="#">View More</a></button>
+                         </div>
+                     </div>
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="./img/ft5.png" alt="ft5" class="card-img">
+                             </div>
+                         </div>
+                         <div class="card-content">
+
+                             <h2 class="name">Nicolas Lima</h2>
+
+                             <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                 deleniti quas. Accusamus debitis quia iusto assumenda mollitia laudantium qui totam
+                                 aut,
+                                 magni at iste temporibus illo! Commodi delectus natus qui?</p>
+
+                             <button class="button"><a href="#">View More</a></button>
+                         </div>
+                     </div>
+                     <div class="card swiper-slide">
+                         <div class="image-content">
+                             <span class="overlay"></span>
+
+                             <div class="card-image">
+                                 <img src="./img/ft6.png" alt="ft6" class="card-img">
+                             </div>
+                         </div>
+                         <div class="card-content">
+
+                             <h2 class="name">Tarciano Cruz</h2>
+
+                             <p class="description">the Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                                 deleniti quas. Accusamus debitis quia iusto assumenda mollitia laudantium qui totam
+                                 aut,
+                                 magni at iste temporibus illo! Commodi delectus natus qui?</p>
+
+                             <button class="button"><a href="#">View More</a></button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="swiper-button-next swiper-navBtn"></div>
+             <div class="swiper-button-prev swiper-navBtn"></div>
+             <!-- <div class="swiper-scrollbar"></div> -->
+             <div class="swiper-pagination"></div>
+         </div>
+
+
+     </footer>
+     <script src="./script/swiper-bundle.min.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+     </script>
+
+     <script src="script/app.js"></script>
+ </body>
+
+ </html>
+ <?php
+else: header("Location: login.php"); endif; //se for diferente de tudo lá em cima mande de volta para o login.php
+?>
