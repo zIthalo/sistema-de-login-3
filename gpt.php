@@ -1,3 +1,8 @@
+<?php
+require 'verifica.php';
+if(isset($_SESSION['id']) && !empty($_SESSION['id'])):// Se a sessão com o id existir e ela não estiver vazia
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,8 +24,6 @@
 </head>
 
 <body>
-
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary colorNav">
         <div class="container-fluid">
             <a class="navbar-brand linkNav" href="#">8-BITS</a>
@@ -41,7 +44,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.php">Android</a></li>
-                            <li><a class="dropdown-item" href="gpt.html">ChatGPT</a></li>
+                            <li><a class="dropdown-item" href="ia.php">Inteligência Artificial</a></li>
                             <li>
                         </ul>
                     </li>
@@ -56,74 +59,105 @@
                             <li>
                         </ul>
                 </ul>
-
-
+                <div class="form-inline my-2 my-lg-0">
+                    <label class="mr-5" for="">
+                        <?php echo "Olá, ".$nomeUser."!    ";#esse código foi criado para mostrar o nome do usuário que estiver logado no sistema aqui na barra de menu do meu site?></label>
+                    <a class="btn btn-danger" href="logout.php">SAIR</a>
+                </div>
             </div>
+        </div>
         </div>
     </nav>
     <main>
         <article>
             <!--Shift + tab para voltar a indentação-->
-            <h1>O que é a Inteligência Artificial?</h1>
+            <h1>ChatGPT</h1>
 
-            <p>A Inteligência Artificial <strong>(IA)</strong> é um campo da ciência cujo propósito é estudar,
-                desenvolver e empregar máquinas para realizarem atividades humanas de maneira autônoma. </p>
+            <p>O <a href="https://openai.com/gpt-4" target="_blank">ChatGPT</a> é um protótipo de inteligência
+                artificial que chamou a atenção por suas respostas detalhadas
+                e articuladas, embora a precisão de suas informações tenha sido criticada. Segundo o NY Times, o
+                entusiasmo em torno da aplicação da tecnologia de <a href="https://openai.com/gpt-4"
+                    target="_blank">OpenAI</a> lembrou outros momentos que "viraram o
+                Vale do Silício de cabeça para baixo, desde a chegada do primeiro iPhone e do mecanismo de busca
+                Google até a introdução do navegador Netscape, que preparou o cenário para a comercialização da
+                internet". Para Bill Gates, o ChatGPT vai mudar o mundo: "Até agora, a inteligência artificial podia ler
+                e
+                escrever, mas não conseguia entender o conteúdo. Os novos programas como o ChatGPT vão tornar
+                muitos trabalhos de escritório mais eficientes. Isso vai mudar o nosso mundo". </p>
 
-            <p>A <strong>IA</strong> envolve o agrupamento de várias tecnologias, como redes neurais artificiais,
-                algoritmos, sistemas de aprendizado, entre outros que conseguem simular capacidades humanas ligadas ao
-                aprendizado, solução de problemas, compreensão da linguagem e tomada de decisões.</p>
-
-            <p>Também está ligada à robótica, ao Machine Learning (Aprendizagem de Máquina), ao reconhecimento de voz e
-                de visão, entre outras tecnologias.</p>
-
-            <p>Com maior desenvolvimento a partir da década de 1950, a inteligência artificial já faz parte da vida
-                cotidiana das pessoas por meio dos assistentes de voz, dos mecanismos de pesquisa, dos carros autônomos
-                e das redes sociais.</p>
-
-            <p>Apesar de trazerem inúmeros benefícios e avanços importantes em diversas áreas, muito se debate a
-                respeito dos limites éticos da inteligência artificial e do papel que elas desempenham na nossa
-                sociedade atual.</p>
-
-
-
-            <h2>Como funciona a inteligência artificial?
-            </h2>
-
-            <p>O funcionamento da inteligência artificial, de maneira simplificada, acontece por meio da coleta e da
-                combinação de um grande volume de dados seguido da identificação de determinados padrões nesse conjunto
-                de informações. Com esse processo, que geralmente se dá mediante a utilização de algoritmos
-                pré-programados, o software consegue tomar decisões e realizar tarefas de maneira autônoma.
-            </p>
 
             <picture class="ia">
-                <source class="ia" media="(max-width: 668px)" srcset="img/ia-pq.jpg" type="image/jpg">
-                <img src="img/ia.jpg" alt="imagem inteligência artificial">
+                <source class="ia" media="(max-width: 668px)" srcset="img/gpt-pq.jpg" type="image/jpg">
+                <img src="img/gpt.jpg" alt="imagem inteligência artificial">
             </picture>
 
 
 
-            <h2 class="titulo2">Inteligência Artificial no Dia a Dia
-            </h2>
+            <h2 class="titulo2">Recursos e limitações</h2>
 
-            <p>A evolução tecnológica vivenciada pela humanidade nas últimas décadas proporcionou a incorporação cada vez maior da inteligência artificial na vida cotidiana. Veja, a seguir, alguns exemplos de como diferentes modelos de IA se fazem presentes.</p>
+            <p>Embora a função principal de um chatbot seja imitar um conversador humano, o ChatGPT é versátil. Por
+                exemplo, ele pode escrever e depurar programas de computador, compor música, teleplays, contos de
+                fadas e redações de estudantes; responda às perguntas do teste (às vezes, dependendo do teste, em um
+                nível acima da média do candidato humano); escrever poesia e letras de músicas; emular um sistema
+                Linux; simular uma sala de bate-papo inteira; jogar jogos como tic-tac-toe; e simular um caixa
+                eletrônico.
+                Os dados de treinamento do ChatGPT incluem páginas de manual e informações sobre fenômenos da
+                Internet e linguagens de programação, como sistemas de quadro de avisos e a linguagem de
+                programação Python.
+            </p>
 
-            
-            <p><strong>Assistentes de voz:</strong> presentes em celulares e dispositivos como caixas de som inteligentes (smart speakers), os assistentes são um modelo de IA que reconhece e executa comandos feitos por meio da voz, como realizar ligações, programar alarmes, dar informações, tocar música e fazer pesquisas online. Os mais famosos assistentes de voz são o Google Assistente (integrado ao sistema Android); Siri, da Apple; e Alexa, da Amazon.</p>
- 
-                <p><strong>Reconhecimento facial:</strong> empregada na confirmação da identidade de uma pessoa ao acessar seus dispositivos pessoais, como smartphones, ou ainda em aplicativos financeiros, como os bancos virtuais. Mais recentemente, o reconhecimento facial tem sido aperfeiçoado para a sua adoção ampla em sistemas de segurança pública.</p>
-                 
-                <p><strong>Redes sociais:</strong> os conteúdos das redes sociais que utilizamos todos os dias, como Instagram, Twitter e Facebook, não são apresentados da mesma maneira para todos os usuários. Isso porque existe um algoritmo que analisa os padrões da atividade dos indivíduos e personaliza qual tipo de postagem aparecerá para cada um, de acordo com os seus interesses.</p>
-                
-            
+
+            <p>Em comparação com seu antecessor, InstructGPT, o ChatGPT tenta reduzir as respostas prejudiciais e
+                enganosas. Em um exemplo, enquanto o InstructGPT aceita a premissa do prompt "Fale-me sobre
+                quando Cristóvão Colombo veio para os EUA em 2015" como sendo verdadeiro, o ChatGPT reconhece a
+                natureza contrafactual da pergunta e enquadra sua resposta como uma consideração hipotética de o que
+                poderia acontecer se Colombo viesse aos EUA em 2015, usando informações sobre as viagens de
+                Cristóvão Colombo e fatos sobre o mundo moderno – incluindo percepções modernas das ações de
+                Colombo</p>
+            <h2>Recepção</h2>
+            <p>O ChatGPT recebeu críticas geralmente positivas. Samantha Lock, do The Guardian, observou que foi
+                capaz de gerar um texto "impressionantemente detalhado" e "semelhante ao humano". O redator de
+                tecnologia Dan Gillmor usou o ChatGPT em uma tarefa do aluno e descobriu que o texto gerado estava
+                de acordo com o que um bom aluno entregaria e opinou que "a academia tem alguns problemas muito
+                sérios a enfrentar". Alex Kantrowitz, da Slate, elogiou a resistência do ChatGPT às questões
+                relacionadas
+                à Alemanha Nazista, incluindo a alegação de que Adolf Hitler construiu rodovias na Alemanha, que
+                recebeu informações sobre o uso de trabalho forçado pela Alemanha Nazista. Em um artigo de opinião, o
+                economista Paul Krugman escreveu que o ChatGPT afetaria a demanda dos trabalhadores do
+                conhecimento. James Vincent, do The Verge, viu o sucesso viral do ChatGPT como prova de que a
+                inteligência artificial se tornou popular. No The Atlantic, Stephen Marche observou que seu efeito na
+                academia e especialmente nos ensaios de aplicação ainda não foi compreendido. O professor e autor do
+                ensino médio da Califórnia, Daniel Herman, escreveu que o ChatGPT dará início ao "Fim do inglês do
+                ensino médio".
+            </p>
+            <picture class="ia">
+                <source class="ia" media="(max-width: 668px)" srcset="img/gpt-teclando-pq.jpg" type="image/jpg">
+                <img src="img/gpt-teclando.jpg" alt="imagem inteligência artificial">
+            </picture>
+            <h2 class="titulo2">Serviço</h2>
+            <p>O ChatGPT foi lançado em 30 de novembro de 2022 pela OpenAI, com sede em São Francisco, criadora
+                do DALL·E 2 e do Whisper AI. O serviço foi lançado inicialmente como gratuito ao público, com planos de
+                monetizar o serviço posteriormente. Em 4 de dezembro, a OpenAI estimou que o ChatGPT já tinha mais
+                de um milhão de usuários. Em janeiro de 2023, o ChatGPT alcançou mais de 100 milhões de usuários,
+                tornando-se o aplicativo de consumo de crescimento mais rápido naquele período. A CNBC escreveu em
+                15 de dezembro de 2022 que o serviço "ainda cai de vez em quando". O serviço funciona melhor em
+                inglês, mas também pode funcionar em alguns outros idiomas, com vários graus de sucesso. Ao contrário
+                de alguns outros avanços recentes de alto perfil em IA, em dezembro de 2022, não havia sinal de um
+                documento técnico oficial revisado por pares sobre o ChatGPT.</p>
+
+
 
 
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UhA_ZgI-otM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4IgCdR--FIc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
 
-            
 
-            <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre a inteligência artificial.</p>
+
+            <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o ChatGPT.</p>
             <p><strong>Este site foi apresentado aqui:</strong></p>
             <p class="map"><iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.405129022287!2d-34.9107968856167!3d-7.8525986943421175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14d50f29c135%3A0xb7c10c823a37123b!2sEscola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins!5e0!3m2!1spt-BR!2sbr!4v1669729072171!5m2!1spt-BR!2sbr"
@@ -268,9 +302,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-        </script>
+    </script>
 
     <script src="script/app.js"></script>
 </body>
 
 </html>
+<?php
+else: header("Location: login.php"); endif; //se for diferente de tudo lá em cima mande de volta para o login.php
+?>

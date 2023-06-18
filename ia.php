@@ -44,7 +44,7 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])):// Se a sessão com o id e
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="index.php">Android</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="gpt.php">ChatGPT</a></li>
                             <li>
                         </ul>
                     <li class="nav-item dropdown">
