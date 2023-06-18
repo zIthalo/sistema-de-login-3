@@ -17,7 +17,7 @@
         // print_r('<br>');
         // print_r('Endereço: ' . $_POST['endereco']);
         //Cada um destes prints r serve para mostrar os conteúdos que eu inseri em cada variável de acordo com meu formulário. Para ficar mais claro é assim: escreva(postando['o conteúdo inserido no campo name em html'])
-        include ('conexao2.php'); //aqui eu incluo minhas configs do php
+        include ('conexao1.php'); //aqui eu incluo minhas configs do php
         $nome = $_POST['nome'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];

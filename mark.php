@@ -93,11 +93,11 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])):// Se a sessão com o id e
                  Universidade da Pensilvânia, onde obteve diplomas em economia e física.</p>
 
              <picture class="ia">
-                 <source media="(max-width: 668px)" srcset="imagens/mark-pq.jpg" type="image/jpg">
+                 <source media="(max-width: 668px)" srcset="img/mark-pq.jpg" type="image/jpg">
                  <img src="img/mark.jpg" alt="Mark Zuckerberg">
              </picture>
 
-
+             <br>
 
              <h2 class="titulo2">Fundação do Facebook com colegas de quarto</h2>
 

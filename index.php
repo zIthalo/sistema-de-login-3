@@ -56,9 +56,11 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])):// Se a sessão com o id e
                             Curiosidades
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="ia.php">Inteligência Artificial</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="ia.php" target="_self">Inteligência Artificial</a></li>
                             <li>
+                            <li><a href="gpt.php" class="dropdown-item" target="_self">ChatGPT</a></li>
+                            <li><a href="elon-musk.php" class="dropdown-item" target="_self">Elon Musk</a></li>
+                            <li><a href="mark.php" class="dropdown-item" target="_self">Mark Zuckerberg</a></li>
                         </ul>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle linkNav" href="#" role="button" data-bs-toggle="dropdown"
