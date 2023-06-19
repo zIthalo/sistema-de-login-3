@@ -7,7 +7,7 @@ session_start();#como estamos trabalhando com sessões devemos iniciar a sessão
 $localhost = "localhost";
 $user = "root";
 $pass = "Mor190916.";
-$banco = "loja";
+$banco = "formulariopi";
 
 #por que usar o pdo para conexões? Porque ele serve para conectar meu sistema a vários outros. Lá na frente eu posso conectar minha biblioteca com vários outros softwares
 

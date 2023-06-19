@@ -56,7 +56,7 @@ if(isset($_SESSION['id']) && !empty($_SESSION['id'])):// Se a sessão com o id e
                              Cadastro
                          </a>
                          <ul class="dropdown-menu">
-                             <li><a class="dropdown-item" href="formulario.php">Cadastre-se</a></li>
+                             <li><a class="dropdown-item" href="form.php">Cadastre-se</a></li>
                              <li><a class="dropdown-item" href="login.php">Login</a></li>
                              <li>
                          </ul>

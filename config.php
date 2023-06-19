@@ -4,7 +4,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', 'Mor190916.');
-define('BASE', 'loja');
+define('BASE', 'formulariopi');
 
 $conexao = new mysqli(HOST, USER, PASS, BASE);
 

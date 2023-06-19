@@ -18,7 +18,7 @@
             <h1>Faça login<br></h1>
             <!-- <a href="index.php">Voltar</a> -->
 
-            <img src="bjj.svg" class="left-login-image" alt="bjj animação">
+            <img src="img/bjj.svg" class="left-login-image" alt="bjj animação">
 
         </div>
 
@@ -40,8 +40,8 @@
                         <input type="password" name="senha" placeholder="Senha"></input>
                     </div>
 
-                    <button class="btn-login">Login</button>
-                    <p><a href="formulario.php" target="_self" class="cadastro">Não possui conta? Cadastre-se.</a></p>
+                    <input class="btn-login" type="submit" name="submit" value="entrar">
+                    <p><a href="form.php" target="_self" class="cadastro">Não possui conta? Cadastre-se.</a></p>
                 </form>
 
             </div>
