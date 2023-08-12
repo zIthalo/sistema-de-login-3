@@ -9,7 +9,7 @@ $user = "root";
 $pass = "Mor190916.";
 $banco = "formulariopi";
 
-#por que usar o pdo para conexões? Porque ele serve para conectar meu sistema a vários outros. Lá na frente eu posso conectar minha biblioteca com vários outros softwares
+#por que usar o pdo para conexões? Porque ele serve para conectar meu sistema a vários outros tipos de bancos de dados e não só MySQL como NoSQL. Lá na frente eu posso conectar minha biblioteca com vários outros softwares
 
 //Aqui eu crio uma variável e um objeto chamado PDO(tem que ser em maiúsculas), depos disso eu digito o mysql:dbname= como pode-se ver vou digitar logo após o nome do meu banco de dados, mas como já salvei em uma variável eu digito o nome da var, neste caso, .$banco. os pontos são para concatenar; depois eu digito o host= e depois dele, usando um ponto para concatenar eu coloco as variáves separadas por vírgula contendo o local host, usuario do sistema de banco de dados e a senha do sgbd.
 $pdo = new PDO("mysql:dbname=".$banco."; host=".$localhost,$user,$pass);
